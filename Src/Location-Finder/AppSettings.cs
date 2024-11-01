@@ -9,7 +9,7 @@ public class AppSettings
 
 public class LocatorProviders
 {
-    public IPGeoProvider IPGeoProvider { get; set; }
+    public required IPGeoProvider IPGeoProvider { get; set; }
 }
 
 public class IPGeoProvider

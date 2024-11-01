@@ -4,7 +4,7 @@ using Location_Finder.WebApplicationExtensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.ConfigureRabbitMQ();
+builder.Services.ConfigureRabbitMQ(builder.Configuration);
 builder.Services.RegisterServices(builder.Configuration);
 
 var app = builder.Build();

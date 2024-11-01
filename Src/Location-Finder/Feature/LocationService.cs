@@ -40,7 +40,8 @@ public class LocationService(IEnumerable<IIPLocationProvider> providers, Locator
             Location = new LocationModel
             {                
                 IP = ip,
-                Country = ""
+                Country = "",
+                City = ""
             }
         };
     }

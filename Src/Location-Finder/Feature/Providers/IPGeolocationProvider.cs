@@ -21,7 +21,8 @@ public class IPGeolocationProvider(IHttpClientFactory httpClientFactory, IOption
             Location = new LocationModel
             {
                 IP = ip,
-                Country = locationResponse.Country,
+                Country = locationResponse?.Country ?? "",
+                City = locationResponse?.City ?? "",
             }
         };
     }
